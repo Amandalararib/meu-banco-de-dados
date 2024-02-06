@@ -2,12 +2,13 @@ import { initializeApp } from "firebase/app";
 import * as firestore from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyARC_Zxq40khYiyiZ357DXsjY8ggYJ_aRk",
-  authDomain: "teste-1c96d.firebaseapp.com",
-  projectId: "teste-1c96d",
-  storageBucket: "teste-1c96d.appspot.com",
-  messagingSenderId: "766998349001",
-  appId: "1:766998349001:web:478aaa644e02217e6cf918",
+  apiKey: "AIzaSyB4qKvrAATEzTF873zN0FhbtARRQX3dnHA",
+  authDomain: "teste-aa73a.firebaseapp.com",
+  projectId: "teste-aa73a",
+  storageBucket: "teste-aa73a.appspot.com",
+  messagingSenderId: "820642394366",
+  appId: "1:820642394366:web:9b9ff7b09e9317d48935af",
+  measurementId: "G-6L1KQPTK3W"
 };
 
 console.log("Conectado ao Firebase!");
