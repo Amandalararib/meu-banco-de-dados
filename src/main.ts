@@ -64,7 +64,19 @@ app.put('/atualizarUsuario/:id', async (req, res) => {
         
     }
 
-
+    app.delete('/deletarUsuario/:id',async (req,res) =>{
+        const id = req.params.id
+    
+        try {
+          await firestore.deleteDoc(firestore.doc(db,'usuarios', id))  
+    
+          res.send('Usuario deletado com sucesso!')
+        } catch (e) {
+            console.log('Erro ao deletar o usuario: ' +e)
+    
+            res.status(500).send('Erro ao deletar o usuario: ' +e)
+        }
+    })
 
 
 })
