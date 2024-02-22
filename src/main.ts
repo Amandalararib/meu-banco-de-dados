@@ -75,7 +75,7 @@ app.put('/atualizarFormulario/:id', async (req, res) => {
         
     }
 
-    app.delete('/deletarformulario/:id',async (req,res) =>{
+    app.delete('/deletarFormulario/:id',async (req,res) =>{
         const id = req.params.id;
     
         try {
