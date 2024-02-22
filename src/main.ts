@@ -69,17 +69,17 @@ app.put('/atualizarFormulario/:id', async (req, res) => {
         })
         res.send('formulario atualizado com sucesso')
     } catch (e) { 
-        console.log('Erro ao atualizar formulario' +e)
+        console.log('Erro ao atualizar formulario' + e)
 
         res.status(500).send('Erro ao atualizar formulario:' +e)
         
     }
 
     app.delete('/deletarformulario/:id',async (req,res) =>{
-        const id = req.params.id
+        const id = req.params.id;
     
         try {
-          await firestore.deleteDoc(firestore.doc(db,'formulario', id))  
+          await firestore.deleteDoc(firestore.doc(db,'formulario', id)) 
     
           res.send('formulario deletado com sucesso!')
         } catch (e) {
